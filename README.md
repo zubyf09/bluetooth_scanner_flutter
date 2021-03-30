@@ -1,4 +1,4 @@
-# muli_mobile_task
+# Flutter_Modular_Skelton
 
 A new Flutter application.
 
