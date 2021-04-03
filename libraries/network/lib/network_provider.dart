@@ -5,38 +5,9 @@ class NetworkProvider {
 
   static Dio instance({String authorization, String contentType}) {
     final dio = Dio();
-    //authorization=authorization;
-    //  dio.options.contentType = contentType ?? Headers.formUrlEncodedContentType;
     dio.options.headers["language"] = "en";
-    // dio.options.headers['Authorization'] = authorization;
-    //  dio.options.headers['Content-Type']= contentType ?? "application/x-www-form-urlencoded";
     dio.options.headers['Accept'] = "application/json";
     return dio;
-  }
-}
-
-class HttpLogInterceptor extends InterceptorsWrapper {
-  @override
-  Future onRequest(RequestOptions options) async {
-    print("onRequest: ${options.uri}\n"
-        "data=${options.data}\n"
-        "method=${options.method}\n"
-        "headers=${options.headers}\n"
-        "queryParameters=${options.queryParameters}");
-    return options;
-  }
-
-  @override
-  Future onResponse(Response response) {
-    print("onResponse: $response");
-    return super.onResponse(response);
-  }
-
-  @override
-  Future onError(DioError err) {
-    print("onError: $err\n"
-        "Response: ${err.response}");
-    return super.onError(err);
   }
 }
 

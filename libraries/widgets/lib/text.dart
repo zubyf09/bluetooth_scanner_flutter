@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:values/values.dart';
 
 
 class AppText extends StatelessWidget {
@@ -33,7 +34,7 @@ class AppText extends StatelessWidget {
         maxLines: maxLines,
         overflow: overflow,
         softWrap: softWrap ?? false,
-        style: textStyle,
+        style: textStyle??Style.fontNormal(color:AppColors.backColor, size: 12.0),
         textAlign: this.textAlign ?? TextAlign.center,
       );
   }

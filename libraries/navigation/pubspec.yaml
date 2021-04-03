@@ -13,10 +13,11 @@ dependencies:
     sdk: flutter
 
   fluro: ^2.0.3
+  flutter_blue: ^0.8.0
   core:
     path: ../../libraries/core
-  signin:
-    path: ../../features/signin
+  bluetooth:
+    path: ../../features/bluetooth
 
 
 dev_dependencies:

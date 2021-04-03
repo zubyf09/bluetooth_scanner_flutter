@@ -1,4 +1,4 @@
-package com.muli.mobile.muli_mobile_task
+package com.bluetooth.scanner
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -11,7 +11,7 @@ class UserRepositoryImp {
   UserRepository userRepository;
 
   UserRepositoryImp() {
-    userRepository = new UserRepository(NetworkProvider.instance());
+    //userRepository = new UserRepository(NetworkProvider.instance());
   }
 
 

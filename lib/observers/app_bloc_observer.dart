@@ -15,13 +15,11 @@ class AppBlocObserver extends BlocObserver {
 
   @override
   void onTransition(Bloc bloc, Transition transition) {
-   // print('Labaiik: ${bloc.runtimeType}, transition: $transition');
     super.onTransition(bloc, transition);
   }
 
   @override
   void onError(Cubit cubit, Object error, StackTrace stackTrace) {
-   // print('Labaiik: ${cubit.runtimeType}, error: $error');
     super.onError(cubit, error, stackTrace);
   }
 }
